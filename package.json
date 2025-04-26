@@ -1,0 +1,79 @@
+{
+  "name": "auto-fetch-fifo-ttl-cache",
+  "version": "1.0.0",
+  "description": "An in-memory FIFO cache with fixed TTL for Node.js, designed to streamline the common get-or-fetch pattern by automating value retrieval. It uses an internal keyed lock to coalesce concurrent fetches for the same key, reducing redundant network calls and eliminating synchronization overhead for developers.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ori88c/auto-fetch-fifo-ttl-cache.git"
+  },
+  "contributors": [
+    "Ori Cohen (https://github.com/ori88c/)"
+  ],
+  "homepage": "https://github.com/ori88c/auto-fetch-fifo-ttl-cache#readme",
+  "author": "Ori Cohen",
+  "license": "Apache-2.0",
+  "scripts": {
+    "format": "prettier --write \"src/**/*.ts\"",
+    "build": "tsc",
+    "prepare": "npm run build",
+    "test": "jest"
+  },
+  "keywords": [
+    "auto-fetch",
+    "automatic-fetch",
+    "automated-fetch",
+    "automated-retrieval",
+    "automated-value-fetch",
+    "get-or-fetch",
+    "fetcher",
+    "async-fetch",
+    "async-cache",
+    "fifo-cache",
+    "ttl-cache",
+    "fifo-ttl",
+    "cache",
+    "expired-entry",
+    "expired-record",
+    "first-in-first-out",
+    "ttl",
+    "time-to-live",
+    "event-driven",
+    "proactive-remove",
+    "lru-alternative",
+    "uniform-key-distribution",
+    "short-term-key-popularity",
+    "in-memory",
+    "graceful-termination",
+    "graceful-teardown",
+    "graceful-shutdown",
+    "clean-teardown",
+    "smooth-shutdown",
+    "nodejs",
+    "typescript",
+    "ts",
+    "ES2020"
+  ],
+  "engines": {
+    "node": ">=14.5.0"
+  },
+  "dependencies": {
+    "fifo-ttl-cache": "1.1.0",
+    "zero-overhead-keyed-promise-lock": "1.1.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
+    "prettier": "^3.5.3",
+    "ts-jest": "^29.1.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.2"
+  },
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.js",
+  "files": [
+    "src/",
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ]
+}
